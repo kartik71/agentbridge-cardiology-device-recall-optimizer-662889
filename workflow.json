@@ -1,0 +1,76 @@
+{
+  "id": "published-tpl-321716389-3",
+  "name": "Cardiology Device Recall Optimizer",
+  "description": "Cardiology Device Recall Optimizer reconciles device telemetry and scores eligibility files; applies decision gates and observability; orchestrates via PACS to cut redundant testing.",
+  "industry": "Healthcare & Life Sciences",
+  "pattern": "Multi-Agent",
+  "complexity": "Beginner",
+  "tags": [
+    "oncology",
+    "safety",
+    "multi-agent",
+    "healthcare"
+  ],
+  "steps": [
+    {
+      "id": "intake",
+      "name": "Device Intake",
+      "description": "Collect, validate and normalize demographics from CPOE; attach a runId and timestamp for traceability."
+    },
+    {
+      "id": "delegate-0",
+      "name": "Delegate",
+      "description": "Execute delegate phase for the Multi-Agent pattern: persist interim state, enforce guardrails, and emit structured JSON results."
+    },
+    {
+      "id": "handoff-1",
+      "name": "Handoff",
+      "description": "Execute handoff phase for the Multi-Agent pattern: persist interim state, enforce guardrails, and emit structured JSON results."
+    },
+    {
+      "id": "optimization-0",
+      "name": "Optimization",
+      "description": "Optimization across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "plan-drafting-1",
+      "name": "Plan Drafting",
+      "description": "Plan Drafting across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "documentation-2",
+      "name": "Documentation",
+      "description": "Documentation across joined datasets; branch on thresholds using decision gates; write metrics (success/error counts) for observability."
+    },
+    {
+      "id": "finalize",
+      "name": "Outcome Measurement",
+      "description": "Assemble final payload with status, artifacts, KPIs and audit trail; store to Analytics Lakehouse; return response JSON for the client."
+    }
+  ],
+  "publishedAt": "2025-10-23T16:18:20.754Z",
+  "destination": "launchpad",
+  "deployments": 9,
+  "lastDeployed": "2025-10-23T16:18:20.754Z",
+  "configuration": {
+    "provider": "azure",
+    "region": "eastus",
+    "compute": "cpu-optimized"
+  },
+  "healthStatus": "healthy",
+  "deploymentCount": 12,
+  "githubRepo": "https://github.com/agentbridge/cardiology-device-recall-optimizer",
+  "maintainer": "You",
+  "downloads": 520,
+  "rating": 4.7975196644302525,
+  "createdAt": "2025-10-23T16:18:20.754Z",
+  "updatedAt": "2025-10-23T16:18:20.754Z",
+  "isPublished": true,
+  "isFeatured": false,
+  "deploymentMetadata": {
+    "publishedBy": "You",
+    "publishedAt": "2025-10-23T16:18:20.754Z",
+    "source": "Template Selection",
+    "version": "1.0.0"
+  }
+}
